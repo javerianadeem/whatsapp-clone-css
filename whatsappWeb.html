@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="whatsappWeb.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    <script src="main.js"></script>
+</head> 
+<body> 
+    <div class="maindiv">
+        <header class="top">
+        <nav class="flex-nav">
+            <p id="para"><i class="fa fa-whatsapp" style="font-size: 36px"></i><a href="https://www.whatsapp.com" class="headeroption"></a><span id="whatsapplink">WhatsApp</span></p>
+            <a href="#" class="menu">☰</a>
+            <ul class="open">
+                <li class="cent"><a href="#" class="headeroption">WHATSAPP WEB</a></li>
+                            <li class="cent"><a href="#" class="headeroption">FEATURES</a></li>
+                            <li class="cent"><a href="#" class="headeroption">DOWNLOAD</a></li>
+                            <li class="cent"><a href="#" class="headeroption">SECURITY</a></li>
+                            <li class="cent"><a href="#" class="headeroption">FAQ</a></li>
+                            <li class="headeroption">
+                                <select class="dropdown">
+                                    <option value="english">EN</option>
+                                    <option value="urdu">Urdu</option>
+                                    <option value="arbi">Arbi</option>
+                                </select>
+                            </li>
+            </ul>
+        </nav>
+        </header>
+        <section class="description">
+            <div class="paras">
+                <p class="firstline">Simple. Secure.<br>Reliable messaging.</p>
+                <p class="secondline">With WhatsApp, you'll get fast, simple, secure messaging<br>
+                    and calling for free*, available on phones all over the world.</p>
+                <p class="thirdline">* Data charges may apply. Contact your provider for details.</p><br>
+
+                <div class="icons">
+                <i class="fa fa-android"></i><a href="#">Android</a><br><br>
+                <i class="fa fa-apple"></i><a href="#">iPhone</a><br><br>
+                <i class="fa fa-desktop"></i><a href="#">Mac or Windows PC</a><br><br>
+                <i class="fa fa-windows"></i><a href="#">Windows Phone</a>
+                </div>
+            </div>
+            <img src="weekend.jpg" class="weekendimg">
+                    <a href="#" class="downloadnow">DOWNLOAD NOW</a>
+        </section>
+        
+        <section class="thirdpart">
+            <div class="businessapp">
+                <p class="first">WhatsApp Business App</p>
+                <p class="second"><span class="busapp">WhatsApp Business</span> is an Android app which is free to download, and was built with the small business owner in mind. With the app, businesses can interact with customers easily by using tools to automate, sort, and quickly respond to messages. If you're a large business, <span class="busapp">learn more about the WhatsApp Business API</span>.</p><br><br>
+                    <img src="sandras.png" class="sandraimg" >
+            </div>
+            <div class="encryption">
+                <div class="circle"></div>
+                <p class="encryptfirst">END-TO-END ENCRYPTION</p>
+                <p class="encryptsecond">Security by Default</p>
+                <p class="encryptthird">Some of your most personal moments are shared on WhatsApp, which is why we built end-to-end encryption into the latest versions of our app. When end-to-end encrypted, your messages and calls are secured so only you and the person you're communicating with can read or listen to them, and nobody in between, not even WhatsApp.</p>
+            </div>
+        </section>
+
+        <div class="explore"><a href="#">EXPLORE FEATURES</a></div>
+
+        <div class="footerdiv">
+            <section class="whatsp">
+                <p>WHATSAPP</p>
+                <a href="#">Features</a>
+                <a href="#">Security</a>
+                <a href="#">Download</a>
+                <a href="#">WhatsApp Web</a>
+                <a href="#">Business</a>
+            </section>
+            <section class="company">
+                    <p>COMPANY</p>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Brand Center</a>
+                    <a href="#">Get In Touch</a>
+                    <a href="#">Blog</a>
+            </section>
+            <section class="dload">
+                    <p>DOWNLOAD</p>
+                    <a href="#">Mac/PC</a>
+                    <a href="#">Andriod</a>
+                    <a href="#">iPhone</a>
+                    <a href="#">Windows Phone</a>
+                    <a href="#">Nokia</a>
+            </section>
+            <section class="help">
+                    <p>HELP</p>
+                    <a href="#">FAQ</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+            </section>
+        </div>
+        <footer>
+            <section class="footersection1">
+                <p class="footerpara1">2019 © WhatsApp Inc.</p><br><br>
+            </section>
+            <section class="footersection2">
+                <p class="footerpara2">Privacy & Terms</p>
+            </section>
+        </footer>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('.menu').on('click',function() {
+         // $('.flex-nav ul').toggleClass('open');
+          $('.flex-nav ul').slideToggle();
+        });
+      });
+    </script>
+</body>
+</html>
