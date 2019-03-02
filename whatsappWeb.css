@@ -261,39 +261,49 @@ footer section{
     justify-content: center;
 }
 @media all and (max-width:1000px) {
-       
+      
       .flex-nav li {
           flex: 1 1 50%;
           align-items: left;
       }
       .flex-nav {
           width: 100%;
+          display: flex;
       }
+      
       #whatsapplink {
           display: none;
       }
       .cent {
         text-align: left;
     }
-    
+      
+}
+@media all and (max-width: 790px) {
+    .flex-nav ul.close
+      {
+          display: flex;
+          flex-direction: column;
+      }
+        
 }
   @media all and (max-width:800px) {
       body {
           background-color: white;
       }
       header {
-          background-color: rgb(19, 194, 173);
+          
           position: relative;
       }
       .flex-nav ul {
           max-height: 100%;
-          width: 100%;
-          display: block;
+          width: 70%;
       }
       .dropdown {
           width: 80%;
       }
       .flex-nav li {
+        color: rgb(19, 194, 173);
           flex-basis: 100%;
       }
       .maindiv {
@@ -303,6 +313,9 @@ footer section{
       .maindiv > * {
           order: 100;
       }
+      .cent {
+        text-align: left;
+    }
       .flex-nav {
           order: 1;
       }
@@ -312,7 +325,7 @@ footer section{
           right: 10px;
           display: block;
       }
-      
+      /*
       .flex-nav ul {
         display: none;
     }
