@@ -237,6 +237,9 @@ div.circle {
     color: white;
     line-height: 25px;
 }
+.footerdiv a:hover {
+    text-decoration: underline;
+}
 .footerdiv p {
     color: rgb(173, 165, 165);
     font-weight: bold;
