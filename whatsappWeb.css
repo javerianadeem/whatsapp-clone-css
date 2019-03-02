@@ -148,7 +148,7 @@ header {/*
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 583px;
+    max-height: 590px;
 }
 span.busapp {
     color:rgb(99, 165, 187);
@@ -175,7 +175,7 @@ span.busapp {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: 583px;
+    max-height: 590px;
 }
 div.circle {
     height: 200px;
