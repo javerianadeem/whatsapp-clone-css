@@ -4,96 +4,74 @@ html {
   
   *, *:before, *:after {
     box-sizing: inherit;
-  }
-  
-  body {
-    background-color: white;
-    margin: 0;
-    font-family: 'Segoe UI';
-  }
-  /* WHATSAPP ICON STYLING */
-.fa-whatsapp {
-   text-align: left;
-    color: white;
-    background-color: #25D366;
-    padding :2px;
-    display: flex;
 }
-.top p {
-    color:white;
-    text-decoration: none;
-    font-size: 1.3em;
-    display: flex;
-    align-items: center;
-    
-    align-content: flex-end;
-}
-.top i {
-    background-color: #25D366;
-}
-header {/*
-    border: 2px solid purple;*/
-    background-color: rgb(19, 194, 173);
-    width: 100%;
-    max-height: 100px;
-    position: fixed;
-    top: 0;
-}
-#para {
-    /* border: 2px solid red; */
-    max-height: 45px;
-}
-.flex-nav {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-}
-/* HEADER HEIGHT */
-.headeroption, .menu {
-    color:white;
-    font-size: 0.75em;
-    font-weight: bold;
-    text-decoration: none;
-    padding:20px 5px;
-    display: inline-flex;
-    flex-direction: column;  
-}
-.dropdown {
-    width: 40%;
-}
-  
-  
-  .maindiv {
-   /* max-width: 1000px;*/
-    margin: 0 auto;
-  }
-  
-
-  
-  /* Flex Container */
-.flex-nav ul {
-    align-items: center;
-    background-color: rgb(19, 194, 173);
-    list-style: none;
+body {
     margin: 0;
     padding: 0;
-  /*  border: 1px solid black; */
-    display: flex;
-    width: 60%;
-    max-height: 95px;
-    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.flex-nav li {
-    align-items: center;
-    flex: 1;
+.fa-whatsapp {
+     color: white;
+     background-color: #25D366;
+     padding :2px;
 }
-.cent {
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    /*padding: 0 100px;*/
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    background-color: rgb(19, 194, 173);
+}
+header .whatsapp {
+    width: 30%;
+    height: 90px;
+    line-height: 85px;
+    font-size: 24px;
+    float: left;   
     text-align: center;
 }
-.menu {
+header .whatsapp a {
+    text-decoration: none;
+    color: white;
+}
+header nav {
+    width: 65%;
+    float: right;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    height: 90px;
+    line-height: 85px;
+    padding: 0 25px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+
+}
+.dropdown {
+    line-height: 85px;
+    padding: 0 25px;
+    text-decoration: none;
+}
+.menu-toggle {
     display: none;
 }
-  /* Now the second part weekend image */
+/* HEADER ENDED * /
+
+
+/* Now the second part weekend image */
 .description {
     /* 
     border: 2px solid blue; */
@@ -143,7 +121,7 @@ header {/*
 .businessapp {
     text-align: center;
     background-color: rgb(214, 229, 235);
-    margin: 1%;
+    margin: 0 1% 0 0; 
     padding: 4%;
     display: flex;
     flex-direction: column;
@@ -170,7 +148,7 @@ span.busapp {
     text-align: center;
     padding: 4%;
     background-color: rgb(228, 238, 241);
-    margin: 1%;
+    margin: 0 0 0 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,8 +176,6 @@ div.circle {
     letter-spacing: 1px;
 }
 /* Third part ended */
-
-
 /* 4th part negins here */
 
 .explore {   
@@ -263,156 +239,187 @@ footer section{
 .footersection1 {
     justify-content: center;
 }
-@media all and (max-width:1000px) {
-      
-      .flex-nav li {
-          flex: 1 1 50%;
-          align-items: left;
-      }
-      .flex-nav {
-          width: 100%;
-          display: flex;
-      }
-      
-      #whatsapplink {
-          display: none;
-      }
-      .cent {
-        text-align: left;
+
+@media all and (max-width: 1090px)
+{
+    
+    #whatsapplink {
+        visibility: hidden;
     }
-      
-}
-@media all and (max-width: 790px) {
-    .flex-nav ul.close
-      {
-          display: flex;
-          flex-direction: column;
-      }
+    header .whatsapp {
+        width: 8%;
+    }
+    header nav {
+        width: 90%;
+
+    }
+    .fa-whatsapp {
+    line-height: 85px;
+    font-size: 24px;
+    text-align: center;
+    }
+    header nav ul li {
+        width: 19%;
         
-}
-  @media all and (max-width:800px) {
-      body {
-          background-color: white;
-      }
-      header {
-          
-          position: relative;
-      }
-      .flex-nav ul {
-          max-height: 100%;
-          width: 70%;
-      }
-      .dropdown {
-          width: 80%;
-      }
-      .flex-nav li {
-        color: rgb(19, 194, 173);
-          flex-basis: 100%;
-      }
-      .maindiv {
-          display: flex;
-          flex-direction: column;
-      }
-      .maindiv > * {
-          order: 100;
-      }
-      .cent {
-        text-align: left;
     }
-      .flex-nav {
-          order: 1;
-      }
-      .menu {
-          position: absolute;
-          top: 0;
-          right: 10px;
-          display: block;
-      }
-      /*
-      .flex-nav ul {
+    header nav ul li a {
+        font-size: 0.8em;
+        padding: 0 8px;
+        text-align: center;
+    }
+    .dropdown {
+        padding: 0 3px;
+    }
+}
+@media  all and (max-width: 770px)
+{
+    
+    .menu-toggle {
+        display: block;
+        color: white;
+        float: right;
+        line-height: 50px;
+        padding-top: 5px;
+        padding-right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .menu-toggle:before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.open:before {
+        content: '\f00d';
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        margin-top: 60px;
+        height: calc(100vh - 2px);
+        background-color: rgb(19, 194, 173);
+        top: 2px;
+        left: 100%;
+    }
+    header nav.open {
+        width: 100%;
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+  
+    }
+    header nav ul li {
+        font-size: 0.9em;
+        width: 100%;
+        padding-left: 10%;
+    }
+    header nav ul li a {
+        height: 60px;
+        border-bottom: 1px solid lightgrey;
+        font-size: 1.2em;
+        text-align: left;
+        line-height: 35px;
+    }
+
+    .dropdown {
+        padding-left: 10%;
+        height: 60px;
+        font-size: 1.2em;
+        text-align: left;
+        line-height: 35px;
+    }
+    header {
+        position: relative;
+    }
+    header .whatsapp {
+        display: flex;
+        width: 70%;
+        justify-content: flex-end;
+    }
+    header  i.fa-whatsapp{
+        text-align: justify;
+        padding: 5px;
+  
+    }
+    /* SECOND PART */
+    .description {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin:0;
+        background-color: rgb(19, 194, 173);
+        width: 100%;
+   
+    }
+    .firstline {
+        color: white;
+        font-size: 1.5em;
+    }
+    .secondline {
+        color: white;
+    }
+    .thirdline {
         display: none;
     }
-      /*
-      .flex-nav ul.open {
-          display: flex;
-          flex-direction: column;
-      } */
-      .description {
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          margin: 0;
-          background-color: rgb(19, 194, 173);
-          
-      }
-      .fa-whatsapp {
-          margin-bottom: 0;
-      }
-      .firstline {
-          color: white;
-          font-size: 1.5em;
-      }
-      .secondline {
-          color: white;
-      }
-      .thirdline {
-          display: none;
-      }
-      
-      .icons {
-          display: none;
-      }
-      .paras {
-          width: 100%;
-      }
-      .downloadnow {
-          color: white;
-          font-size: 1em;
-          text-decoration: none;
-          background-color: rgb(68, 223, 124);
-          border-radius: 20%;
-          padding: 20px;
-          margin: 5%;
-          letter-spacing: 1px;
-          text-align: center;
-         font-weight: bold;
-         display: flex;
-         flex-direction: column;
-          order: 4;     
-      }
-      .weekendimg {
-        order: 5;
-      }
-      
-      .thirdline {
-          order: 6;
+    
+    .icons {
+        display: none;
     }
-    .thirdpart {
-        display: flex;
-        flex-direction: column;
+    .paras {
+        width: 100%;
     }
-    .businessapp {
-        margin: 0;
-        padding: 0;
+    .downloadnow {
+        color: white;
+        font-size: 1em;
+        text-decoration: none;
+        background-color: rgb(68, 223, 124);
+        border-radius: 20%;
+        padding: 20px;
+        margin: 5%;
+        letter-spacing: 1px;
+        text-align: center;
+       font-weight: bold;
+       display: flex;
+       flex-direction: column;
+        order: 4;     
     }
-    .encryption {
-        margin: 0;
+    .weekendimg {
+      order: 5;
     }
-    div.footerdiv {
-        display: flex;
-        flex-direction: column;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-    .footersection1 {
-        justify-content: flex-start;
-        padding-left: 10px;
-        font-size: 0.8em;
-    }
-    .footersection2 {
-        padding-left: 10px;
-        font-size: 0.8em;
-    }
+    
+    .thirdline {
+        order: 6;
   }
+  .thirdpart {
+      display: flex;
+      flex-direction: column;
+  }
+  .businessapp {
+    margin: 0;
+    padding: 0;
+}
+.encryption {
+    margin: 0;
+}
+div.footerdiv {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+.footersection1 {
+    justify-content: flex-start;
+    padding-left: 10px;
+    font-size: 0.8em;
+}
+.footersection2 {
+    padding-left: 10px;
+    font-size: 0.8em;
+}
+}
