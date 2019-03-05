@@ -8,7 +8,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .fa-whatsapp {
      color: white;
@@ -28,14 +28,16 @@ header {
 header .whatsapp {
     width: 30%;
     height: 90px;
-    line-height: 85px;
+    line-height: 90px;
     font-size: 24px;
     float: left;   
     text-align: center;
+    
 }
 header .whatsapp a {
     text-decoration: none;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 header nav {
     width: 65%;
@@ -51,13 +53,16 @@ header nav ul li {
 }
 header nav ul li a {
     height: 90px;
-    line-height: 85px;
+    line-height: 90px;
     padding: 0 25px;
     color: white;
     text-decoration: none;
     display: block;
-    font-size: 0.9em;
+    font-size: 0.75em;
     letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
 
 }
 .dropdown {
@@ -68,10 +73,22 @@ header nav ul li a {
 .menu-toggle {
     display: none;
 }
+.navwhatsapplogo {
+    color: white;
+     background-color: #25D366;
+     padding :2px;
+    float: left;
+    display: none;
+}
 /* HEADER ENDED * /
 
 
 /* Now the second part weekend image */
+
+.imagelogo {
+    display: none;
+}
+
 .description {
     /* 
     border: 2px solid blue; */
@@ -81,24 +98,25 @@ header nav ul li a {
     align-items: center;
 }
 .firstline {
+    
     font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .secondline {
     font-size: 15px;
     color: gray;
+    line-height: 23px;
 }
 .thirdline {
     font-size: 13px;
     color: rgb(214, 206, 206);
     
 }
-.weekendimg {/*
-    border: 2px solid red; */
+.weekendimg {
     height: 500px;
 }
-/*.paras {
-    border: 2px solid peru;
-}*/
+
+
 .icons a, .icons {
     text-decoration: none;
     color: rgb(19, 194, 173);
@@ -109,7 +127,7 @@ header nav ul li a {
 }
 .downloadnow {
     color: white;
-    font-size: 0.1em;
+    display: none;
 }
 /* SECOND PART ENDS HERE */
 
@@ -126,16 +144,13 @@ header nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 590px;
+    max-height: 580px;
 }
 span.busapp {
     color:rgb(99, 165, 187);
 }
 .sandraimg {
-    /*
-    border: 2px solid black; */
-    width: 350px;
-    display: flex;
+    width: 330px;
 }
 .first {
     font-size: 1.5em;
@@ -153,7 +168,7 @@ span.busapp {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: 590px;
+    max-height: 580px;
 }
 div.circle {
     height: 200px;
@@ -196,22 +211,25 @@ div.circle {
     font-weight: bold;
 
 }
-/*** FOOTER ***/
+/*** FOOTER DIV ***/
 .footerdiv {
     background-color: rgb(52, 70, 93);
     display: flex;
-    padding: 4% 12% 4% 12%;
+    padding: 2%;
+    padding-left: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
 }
-.footerdiv section {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.footerdiv ul {
+    list-style: none;
+    width: 23%;
 }
 .footerdiv a 
 {
     text-decoration: none;
     color: white;
     line-height: 25px;
+
 }
 .footerdiv a:hover {
     text-decoration: underline;
@@ -227,6 +245,7 @@ footer {
     padding: 0;
     margin: 0;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer section{
     display: flex;
@@ -239,18 +258,21 @@ footer section{
 .footersection1 {
     justify-content: center;
 }
-
+.footerpara2 {
+    color: white;
+}
+/* MEDIA QUERIES */
 @media all and (max-width: 1090px)
 {
-    
+    /* header */
     #whatsapplink {
         visibility: hidden;
     }
     header .whatsapp {
-        width: 8%;
+        width: 6%;
     }
     header nav {
-        width: 90%;
+        width: 92%;
 
     }
     .fa-whatsapp {
@@ -259,27 +281,48 @@ footer section{
     text-align: center;
     }
     header nav ul li {
-        width: 19%;
-        
+        width: 15%;
     }
     header nav ul li a {
         font-size: 0.8em;
-        padding: 0 8px;
+        padding: 0 8px 2px 0;
         text-align: center;
+
     }
     .dropdown {
         padding: 0 3px;
     }
+    .weblink {
+        width: 20%;
+    }
+    .downloadlink
+    {
+        width: 19%;
+    } 
+    .faqlink {
+        width: 17%;
+    }
+    .featurelink
+    {
+        width: 19%;
+    }
+     .securitylink{
+        width: 15%;
+    }
+    .dropdown {
+        width: 10%;
+    }
+    /* header ended */
 }
 @media  all and (max-width: 770px)
 {
-    
+    /*header query started for mobile*/
     .menu-toggle {
         display: block;
         color: white;
         float: right;
         line-height: 50px;
-        padding-top: 5px;
+        padding-top: 0;
         padding-right: 20px;
         font-size: 24px;
         cursor: pointer;
@@ -295,7 +338,7 @@ footer section{
     header nav {
         position: absolute;
         width: 100%;
-        margin-top: 60px;
+        margin-top: 38px;
         height: calc(100vh - 2px);
         background-color: rgb(19, 194, 173);
         top: 2px;
@@ -308,6 +351,7 @@ footer section{
 
     header nav ul {
         display: block;
+        visibility: visible;
   
     }
     header nav ul li {
@@ -315,14 +359,27 @@ footer section{
         width: 100%;
         padding-left: 10%;
     }
+    .weblink, .featurelink, .downloadlink, .faqlink, .securitylink {
+        width: 100%;
+    }
     header nav ul li a {
+        width: 90%;
         height: 60px;
         border-bottom: 1px solid lightgrey;
-        font-size: 1.2em;
+        font-size: 1em;
         text-align: left;
-        line-height: 35px;
+        line-height: 60px;
+        font-weight: normal;
     }
-
+    .whatsapp {
+        visibility: hidden;
+    }
+    .navwhatsapplogo {
+        display: block;
+        float: left;
+        position: absolute;
+        top: 0;
+    }
     .dropdown {
         padding-left: 10%;
         height: 60px;
@@ -331,26 +388,24 @@ footer section{
         line-height: 35px;
     }
     header {
-        position: relative;
+        position: fixed;
+        height: 40px;
     }
-    header .whatsapp {
-        display: flex;
-        width: 70%;
-        justify-content: flex-end;
-    }
-    header  i.fa-whatsapp{
-        text-align: justify;
-        padding: 5px;
-  
-    }
+
+    /*header query ended for mobile */
+
     /* SECOND PART */
+    .imagelogo {
+        display: block;
+        background-color: rgb(19,194, 173);
+        padding-top: 12%;
+    }
     .description {
-        
         display: flex;
         flex-direction: column;
         text-align: center;
+        margin: 0;
         padding: 0;
-        margin:0;
         background-color: rgb(19, 194, 173);
         width: 100%;
    
@@ -361,9 +416,8 @@ footer section{
     }
     .secondline {
         color: white;
-    }
-    .thirdline {
-        display: none;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
     .icons {
@@ -380,6 +434,8 @@ footer section{
         border-radius: 20%;
         padding: 20px;
         margin: 5%;
+        margin-top: 2%;
+        margin-bottom: 7%;
         letter-spacing: 1px;
         text-align: center;
        font-weight: bold;
@@ -390,24 +446,32 @@ footer section{
     .weekendimg {
       order: 5;
     }
-    
     .thirdline {
-        order: 6;
-  }
+        display: none;
+    }
+    
   .thirdpart {
       display: flex;
       flex-direction: column;
   }
+  /* THIRD PART */
   .businessapp {
     margin: 0;
-    padding: 0;
 }
 .encryption {
     margin: 0;
 }
-div.footerdiv {
-    display: flex;
-    flex-direction: column;
+.footerdiv {
+    width: 100%;
+    display: flex;    flex-wrap: wrap;
+    padding-left: 1%;
+}
+.footerdiv ul {
+    
+    width: 43%
+}
+.footerdiv ul li a {
+    line-height: 40px;
 }
 footer {
     display: flex;
